@@ -1,22 +1,10 @@
-name: Super-Linter
+name: Email Echo Workflow
 
-on: 
-  push:
+on: push
 
 jobs:
-  lint:
-    name: Lint Code Base
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v6
-        env:
-          VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Email tag
-        run: echo "<!--email_off-->21f1000014@ds.study.iitm.ac.in<!--/email_off-->"
+      - name: <!--email_off-->21f1000014@ds.study.iitm.ac.in<!--/email_off-->
+        run: echo "Hello, world!"
