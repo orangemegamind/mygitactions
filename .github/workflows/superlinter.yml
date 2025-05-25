@@ -1,3 +1,7 @@
+name: Super-Linter
+
+on: push
+
 jobs:
   test:
     steps:
